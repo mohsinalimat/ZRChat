@@ -169,13 +169,13 @@
 				C0B6B5C620173DB1006774F6 /* ZRToolBar+Keyboard.swift */,
 				C0B6B5E420173DB1006774F6 /* RecordIndicator.swift */,
 				C0B6B5E520173DB1006774F6 /* ZRKeyBoardType.swift */,
-				C0B6B5E620173DB1006774F6 /* More */,
 				C0B6B5EB20173DB1006774F6 /* UIExtension.swift */,
 				C0B6B5EC20173DB1006774F6 /* ZRButton.swift */,
 				C0B6B5ED20173DB1006774F6 /* ZRToolBarDelegate.swift */,
 				C0B6B5EE20173DB1006774F6 /* ZRToolBar.swift */,
 				C0B6B5EF20173DB1006774F6 /* ZRToolBar+Record.swift */,
 				C0B6B5F020173DB1006774F6 /* ZRToolBar+Layout.swift */,
+				C0B6B5E620173DB1006774F6 /* More */,
 				C0B6B5F120173DB1006774F6 /* Emotion */,
 			);
 			name = ToolBar;

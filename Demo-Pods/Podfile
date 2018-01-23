@@ -1,0 +1,10 @@
+platform :ios, '8.0'
+use_frameworks!
+
+# Import CocoaPods sources
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'ChatDemo' do
+	pod 'ZRChatBar', '~> 0.15'
+
+end

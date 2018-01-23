@@ -1,12 +1,13 @@
 //
 //  ViewController.swift
-//  ZRChat
+//  ChatDemo
 //
-//  Created by 李锋 on 2018/1/13.
+//  Created by 李锋 on 2018/1/23.
 //  Copyright © 2018年 Zero. All rights reserved.
 //
 
 import UIKit
+import ZRChatBar
 
 class ViewController: UIViewController, ZRToolBarDelegate, ZRToolBarDataSource {
 
@@ -25,6 +26,45 @@ class ViewController: UIViewController, ZRToolBarDelegate, ZRToolBarDataSource {
         return view
     }()
     
+    // MARK: - ZRToolBar DataSource
+    func contentForMore() -> [ZRMoreModel] {
+        let model1 = ZRMoreModel(imageStr: "chatBar_colorMore_photo", title: "照片")
+        let model2 = ZRMoreModel(imageStr: "chatBar_colorMore_camera", title: "拍摄")
+        return [model1, model2]
+    }
+    
+    func contentForEmojis() -> [ZREmojisModel] {
+        let models = emojis.map { (arg) -> ZREmojisModel in
+            let (title, imgStr) = arg
+            return ZREmojisModel(imageName: imgStr, text: title, type: .normal)
+        }
+        return models
+    }
+    
+    // MARK: - ZRToolBar Delegate
+    func sendText(text: String) {
+        print("【->:】", text)
+    }
+    
+    func moreDidSelectedAtIndex(index: Int) {
+        print("【more selected in:】 ", index)
+    }
+    
+    func voiceStatus(status: VoiceStatus) {
+        print(status)
+    }
+    
+    func keyboardHeight(height: CGFloat) {
+        self.toolBarVariableV.constant = -height
+    }
+    
+    func textViewHeight(_ height: CGFloat) {
+        UIView.animate(withDuration: 0.25, animations: {
+            self.toolBarHeight.constant = height + 10
+            self.view.layoutIfNeeded()
+        })
+    }
+    
     // toolBar 可变约束
     lazy var toolBarVariableV: NSLayoutConstraint = NSLayoutConstraint()
     // toolBar 高度
@@ -32,7 +72,7 @@ class ViewController: UIViewController, ZRToolBarDelegate, ZRToolBarDataSource {
     
     override func loadView() {
         super.loadView()
-        self.view.backgroundColor = UIColor(0xEFF0F5)
+        self.view.backgroundColor = UIColor(red: 239.0 / 255, green: 240.0 / 255, blue: 245.0 / 255, alpha: 1)
         // 布局UI
         self.layoutUI()
         // 监测键盘
@@ -42,7 +82,6 @@ class ViewController: UIViewController, ZRToolBarDelegate, ZRToolBarDataSource {
     }
     
     func layoutUI() {
-        // 加载toolBar
         self.view.addSubview(toolBar)
         let toolBarH = "H:|-0-[toolBar]-0-|"
         let toolBarV = "V:[toolBar]"
@@ -70,7 +109,6 @@ class ViewController: UIViewController, ZRToolBarDelegate, ZRToolBarDataSource {
     }
     
     @objc fileprivate func keybordShow(notification:Notification){
-        //        guard self.toolBar.keyboardType == .text else { return }
         guard let userInfo = notification.userInfo else { return }
         guard let frame = userInfo[UIKeyboardFrameEndUserInfoKey] else { return }
         let boardH = (frame as! CGRect).size.height
@@ -93,44 +131,6 @@ class ViewController: UIViewController, ZRToolBarDelegate, ZRToolBarDataSource {
             self.toolBar.resetWhenTaped()
             self.view.layoutIfNeeded()
         })
-    }
-    
-    // MARK: - ZRToolBar Delegate
-    func keyboardHeight(height: CGFloat) {
-        self.toolBarVariableV.constant = -height
-    }
-    
-    func textViewHeight(_ height: CGFloat) {
-        UIView.animate(withDuration: 0.25, animations: {
-            self.toolBarHeight.constant = height + 10
-            self.view.layoutIfNeeded()
-        })
-    }
-    
-    func sendText(text: String) {
-        print("【->:】", text)
-    }
-    
-    func moreDidSelectedAtIndex(index: Int) {
-        print("【more selected in:】 ", index)
-    }
-    
-    func voiceStatus(status: VoiceStatus) {
-        print(status)
-    }
-    
-    // MARK: - ZRToolBar DataSource
-    func contentForMore() -> [ZRMoreModel] {
-        let model1 = ZRMoreModel(imageStr: "chatBar_colorMore_photo", title: "照片")
-        let model2 = ZRMoreModel(imageStr: "chatBar_colorMore_camera", title: "相机")
-        return [model1, model2]
-    }
-    
-    func contentForEmojis() -> [ZREmojisModel] {
-        let models = emojis.map { (title, imgStr) -> ZREmojisModel in
-            return ZREmojisModel(imageName: imgStr, text: title, type: .normal)
-        }
-        return models
     }
 }
 
