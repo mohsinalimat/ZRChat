@@ -24,7 +24,7 @@ open class ZREmojisModel {
     // type
     var type: EmojiType
     
-    init(imageName: String, text: String, type: EmojiType) {
+    public init(imageName: String, text: String, type: EmojiType) {
         self.imageName = imageName
         self.text = text
         self.type = type
