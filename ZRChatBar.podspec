@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZRChatBar"
-  s.version      = "0.14"
-  s.summary      = "chat bar"
+  s.version      = "0.15"
+  s.summary      = "chat toolbar"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                    chat bar 。。。
+                    chat ui: chat toolbar
                    DESC
 
   s.homepage     = "https://github.com/ZeroFengLee"
@@ -106,7 +106,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  s.resources = "ToolBar/Resources/*.png"
+  # s.resources = "ToolBar/Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
