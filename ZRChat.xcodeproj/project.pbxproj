@@ -22,7 +22,6 @@
 		C045F96C200DF8BE00B49F76 /* ZRButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C045F967200DF8BE00B49F76 /* ZRButton.swift */; };
 		C045F96D200DF8BE00B49F76 /* ZRKeyBoardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C045F968200DF8BE00B49F76 /* ZRKeyBoardType.swift */; };
 		C045F970200DF8BE00B49F76 /* ZRToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C045F96B200DF8BE00B49F76 /* ZRToolBar.swift */; };
-		C045F973200E045800B49F76 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C045F972200E045800B49F76 /* UIExtension.swift */; };
 		C045F975200EEF6300B49F76 /* RecordIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C045F974200EEF6300B49F76 /* RecordIndicator.swift */; };
 		C091F0E720104D9C00B9B30F /* ZREmojisCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091F0E620104D9C00B9B30F /* ZREmojisCell.swift */; };
 		C091F0E92010675000B9B30F /* ZREmojisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091F0E82010675000B9B30F /* ZREmojisModel.swift */; };
@@ -64,6 +63,7 @@
 		C0F373CF20172F2E009B8C3A /* zr_signal07@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F373CD20172F2E009B8C3A /* zr_signal07@3x.png */; };
 		C0F373D220172F37009B8C3A /* zr_signal08@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F373D020172F37009B8C3A /* zr_signal08@3x.png */; };
 		C0F373D320172F37009B8C3A /* zr_signal08@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F373D120172F37009B8C3A /* zr_signal08@2x.png */; };
+		C0F373D520173716009B8C3A /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F373D420173716009B8C3A /* UIExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,7 +105,6 @@
 		C045F967200DF8BE00B49F76 /* ZRButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZRButton.swift; sourceTree = "<group>"; };
 		C045F968200DF8BE00B49F76 /* ZRKeyBoardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZRKeyBoardType.swift; sourceTree = "<group>"; };
 		C045F96B200DF8BE00B49F76 /* ZRToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZRToolBar.swift; sourceTree = "<group>"; };
-		C045F972200E045800B49F76 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 		C045F974200EEF6300B49F76 /* RecordIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordIndicator.swift; sourceTree = "<group>"; };
 		C091F0E620104D9C00B9B30F /* ZREmojisCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZREmojisCell.swift; sourceTree = "<group>"; };
 		C091F0E82010675000B9B30F /* ZREmojisModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZREmojisModel.swift; sourceTree = "<group>"; };
@@ -147,6 +146,7 @@
 		C0F373CD20172F2E009B8C3A /* zr_signal07@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zr_signal07@3x.png"; sourceTree = "<group>"; };
 		C0F373D020172F37009B8C3A /* zr_signal08@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zr_signal08@3x.png"; sourceTree = "<group>"; };
 		C0F373D120172F37009B8C3A /* zr_signal08@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zr_signal08@2x.png"; sourceTree = "<group>"; };
+		C0F373D420173716009B8C3A /* UIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +273,7 @@
 				C091F0EC2011930E00B9B30F /* More */,
 				C0220A73201046D500D7B333 /* Emotion */,
 				C045F967200DF8BE00B49F76 /* ZRButton.swift */,
+				C0F373D420173716009B8C3A /* UIExtension.swift */,
 				C045F968200DF8BE00B49F76 /* ZRKeyBoardType.swift */,
 				C045F974200EEF6300B49F76 /* RecordIndicator.swift */,
 				C045F96B200DF8BE00B49F76 /* ZRToolBar.swift */,
@@ -287,7 +288,6 @@
 		C045F971200E044B00B49F76 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				C045F972200E045800B49F76 /* UIExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -508,6 +508,7 @@
 				C0A7A3552015928200AE4EF7 /* ZRToolBar+Keyboard.swift in Sources */,
 				C045F970200DF8BE00B49F76 /* ZRToolBar.swift in Sources */,
 				C045F975200EEF6300B49F76 /* RecordIndicator.swift in Sources */,
+				C0F373D520173716009B8C3A /* UIExtension.swift in Sources */,
 				C0220A76201046EE00D7B333 /* ZREmotionCollectionView.swift in Sources */,
 				C045F96D200DF8BE00B49F76 /* ZRKeyBoardType.swift in Sources */,
 				C091F0F22011995F00B9B30F /* ZRMoreCell.swift in Sources */,
@@ -518,7 +519,6 @@
 				C0A7A353201590BD00AE4EF7 /* ZRToolBar+Layout.swift in Sources */,
 				C045F925200A107E00B49F76 /* ViewController.swift in Sources */,
 				C091F0EE2011933800B9B30F /* ZRMoreCollectionView.swift in Sources */,
-				C045F973200E045800B49F76 /* UIExtension.swift in Sources */,
 				C0220A77201046EE00D7B333 /* ZREmotionView.swift in Sources */,
 				C045F923200A107E00B49F76 /* AppDelegate.swift in Sources */,
 				C091F0E92010675000B9B30F /* ZREmojisModel.swift in Sources */,
