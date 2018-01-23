@@ -14,9 +14,6 @@
 		C045F92D200A107E00B49F76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C045F92B200A107E00B49F76 /* LaunchScreen.storyboard */; };
 		C045F938200A107E00B49F76 /* ZRChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C045F937200A107E00B49F76 /* ZRChatTests.swift */; };
 		C045F943200A107E00B49F76 /* ZRChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C045F942200A107E00B49F76 /* ZRChatUITests.swift */; };
-		C0B6B5C220173D8C006774F6 /* ZRChatViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6B5BF20173D8C006774F6 /* ZRChatViewController+Layout.swift */; };
-		C0B6B5C320173D8C006774F6 /* ZRChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6B5C020173D8C006774F6 /* ZRChatViewController.swift */; };
-		C0B6B5C420173D8C006774F6 /* ZRChatViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6B5C120173D8C006774F6 /* ZRChatViewController+Keyboard.swift */; };
 		C0B6B5F620173DB1006774F6 /* ZRToolBar+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6B5C620173DB1006774F6 /* ZRToolBar+Keyboard.swift */; };
 		C0B6B61320173DB1006774F6 /* RecordIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6B5E420173DB1006774F6 /* RecordIndicator.swift */; };
 		C0B6B61420173DB1006774F6 /* ZRKeyBoardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6B5E520173DB1006774F6 /* ZRKeyBoardType.swift */; };
@@ -68,9 +65,6 @@
 		C045F93E200A107E00B49F76 /* ZRChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZRChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C045F942200A107E00B49F76 /* ZRChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZRChatUITests.swift; sourceTree = "<group>"; };
 		C045F944200A107E00B49F76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0B6B5BF20173D8C006774F6 /* ZRChatViewController+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZRChatViewController+Layout.swift"; sourceTree = "<group>"; };
-		C0B6B5C020173D8C006774F6 /* ZRChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZRChatViewController.swift; sourceTree = "<group>"; };
-		C0B6B5C120173D8C006774F6 /* ZRChatViewController+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZRChatViewController+Keyboard.swift"; sourceTree = "<group>"; };
 		C0B6B5C620173DB1006774F6 /* ZRToolBar+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZRToolBar+Keyboard.swift"; sourceTree = "<group>"; };
 		C0B6B5E420173DB1006774F6 /* RecordIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordIndicator.swift; sourceTree = "<group>"; };
 		C0B6B5E520173DB1006774F6 /* ZRKeyBoardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZRKeyBoardType.swift; sourceTree = "<group>"; };
@@ -140,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				C0B6B5C520173DB1006774F6 /* ToolBar */,
-				C0B6B5BE20173D8C006774F6 /* ViewController */,
 				C045F922200A107E00B49F76 /* AppDelegate.swift */,
 				C0F3738E20172D96009B8C3A /* Emojis.swift */,
 				C045F924200A107E00B49F76 /* ViewController.swift */,
@@ -168,16 +161,6 @@
 				C045F944200A107E00B49F76 /* Info.plist */,
 			);
 			path = ZRChatUITests;
-			sourceTree = "<group>";
-		};
-		C0B6B5BE20173D8C006774F6 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				C0B6B5BF20173D8C006774F6 /* ZRChatViewController+Layout.swift */,
-				C0B6B5C020173D8C006774F6 /* ZRChatViewController.swift */,
-				C0B6B5C120173D8C006774F6 /* ZRChatViewController+Keyboard.swift */,
-			);
-			path = ViewController;
 			sourceTree = "<group>";
 		};
 		C0B6B5C520173DB1006774F6 /* ToolBar */ = {
@@ -356,7 +339,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0B6B61A20173DB1006774F6 /* ZRButton.swift in Sources */,
-				C0B6B5C220173D8C006774F6 /* ZRChatViewController+Layout.swift in Sources */,
 				C0B6B62220173DB1006774F6 /* ZREmotionCollectionView.swift in Sources */,
 				C0B6B61E20173DB1006774F6 /* ZRToolBar+Layout.swift in Sources */,
 				C0B6B61420173DB1006774F6 /* ZRKeyBoardType.swift in Sources */,
@@ -367,13 +349,11 @@
 				C0B6B61920173DB1006774F6 /* UIExtension.swift in Sources */,
 				C045F925200A107E00B49F76 /* ViewController.swift in Sources */,
 				C0B6B62120173DB1006774F6 /* ZREmojisModel.swift in Sources */,
-				C0B6B5C320173D8C006774F6 /* ZRChatViewController.swift in Sources */,
 				C0B6B61520173DB1006774F6 /* ZRMoreView.swift in Sources */,
 				C0B6B61320173DB1006774F6 /* RecordIndicator.swift in Sources */,
 				C0B6B61F20173DB1006774F6 /* ZREmojisCell.swift in Sources */,
 				C045F923200A107E00B49F76 /* AppDelegate.swift in Sources */,
 				C0B6B61720173DB1006774F6 /* ZRMoreModel.swift in Sources */,
-				C0B6B5C420173D8C006774F6 /* ZRChatViewController+Keyboard.swift in Sources */,
 				C0B6B61B20173DB1006774F6 /* ZRToolBarDelegate.swift in Sources */,
 				C0B6B61620173DB1006774F6 /* ZRMoreCell.swift in Sources */,
 				C0B6B61820173DB1006774F6 /* ZRMoreCollectionView.swift in Sources */,
