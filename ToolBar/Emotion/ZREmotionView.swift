@@ -25,7 +25,7 @@ class ZREmotionView: UIView, UICollectionViewDelegate, UICollectionViewDataSourc
     
     fileprivate lazy var sendBtn: UIButton = {
         var button = UIButton(type: .custom)
-        button.setTitle("发送", for: UIControlState())
+        button.setTitle(NSLocalizedString("发送", comment: "ZRCHARTBAR"), for: UIControlState())
         button.titleLabel?.font = UIFont.systemFont(ofSize: 15)
         button.setTitleColor(UIColor(0x555555), for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false

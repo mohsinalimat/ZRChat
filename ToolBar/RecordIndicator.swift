@@ -26,7 +26,7 @@ class RecordIndicator: UIView {
                 self.volumeImg.isHidden = false
                 volumeImg.image = UIImage(named:"zr_signal01")
                 self.cancelImg.isHidden = true
-                self.tipLabel.text = "手指上滑, 取消录音"
+                self.tipLabel.text = NSLocalizedString("手指上滑, 取消录音", comment: "ZRCHARTBAR")
                 self.tipLabel.backgroundColor = UIColor.clear
             case .cancel:
                 self.isHidden = false
@@ -34,7 +34,7 @@ class RecordIndicator: UIView {
                 self.volumeImg.isHidden = true
                 volumeImg.image = UIImage(named:"zr_signal01")
                 self.cancelImg.isHidden = false
-                self.tipLabel.text = "松开手指, 取消发送"
+                self.tipLabel.text = NSLocalizedString("松开手指, 取消发送", comment: "ZRCHARTBAR")
                 self.tipLabel.backgroundColor = UIColor.red
             case .end:
                 self.isHidden = true

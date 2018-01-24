@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZRChatBar"
-  s.version      = "0.15"
+  s.version      = "0.16"
   s.summary      = "chat toolbar"
 
   # This description is used to generate tags and improve search results.

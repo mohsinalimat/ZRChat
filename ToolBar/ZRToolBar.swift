@@ -70,7 +70,7 @@ open class ZRToolBar: UIView, UITextViewDelegate, ZRMoreDelegate, ZREmotionDeleg
     
     lazy var recordButton: UIButton = {
         var button = UIButton(type: .custom)
-        button.setTitle("按住 说话", for: .normal)
+        button.setTitle(NSLocalizedString("按住 说话", comment: "ZRCHARTBAR"), for: .normal)
         button.setTitleColor(UIColor.darkGray, for: UIControlState())
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
         button.setBackgroundImage(UIColor(0xF3F4F8).image, for: .normal)
