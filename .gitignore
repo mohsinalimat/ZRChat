@@ -46,6 +46,7 @@ playground.xcworkspace
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
  Pods/
+ Demo-Pods/Pods/
 
 # Carthage
 #
@@ -66,4 +67,4 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 
-Example/Podfile.lock
+Demo-Pods/Podfile.lock
