@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/cocoapods/l/ZRChatBar.svg?style=flat)	
 ![Platform](https://img.shields.io/cocoapods/p/ZRChatBar.svg?style=flat)
 
-#演示
+# 演示
 <img src="https://github.com/ZeroFengLee/ZRChat/blob/master/Jietu20180124-104214.gif" width="237" height="420">
 
 
