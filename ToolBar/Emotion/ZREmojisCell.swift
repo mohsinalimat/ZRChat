@@ -17,6 +17,7 @@ class ZREmojisCell: UICollectionViewCell {
                 return
             }
             self.imageView.image = UIImage(named: emojisModel.imageName)
+            self.imageView.contentMode = .scaleAspectFit
         }
     }
     
