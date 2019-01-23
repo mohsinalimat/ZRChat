@@ -5,65 +5,65 @@
 ![License](https://img.shields.io/cocoapods/l/ZRChatBar.svg?style=flat)	
 ![Platform](https://img.shields.io/cocoapods/p/ZRChatBar.svg?style=flat)
 
-# 演示
+# Demonstration
 <img src="https://github.com/mohsinalimat/ZRChat/blob/master/Jietu20180124-104214.gif" width="237" height="420">
 
 
-# 安装
+# Installation
 
 ### Podfile
 
-在podfile中添加PieceStore依赖
+Add a PieceStore dependency to the podfile
 ```swift
 pod 'ZRChatBar'
 ```
 
-## 国际化:
+## Globalization:
 
-| 国际化字段      |     格式|   说明 |
+| Internationalization Field      |     Format|   Description |
 | :------- 	| :------ | :------|
-| `"手指上滑, 取消录音"` |  String 	|  录音时的提示语 |
-| `"松开手指, 取消发送"` |  String 	|  录音时的提示语 |
-| `"按住 说话` |  String 	|  录音时的提示语 |
-| `"发送"` |  String 	|  表情界面发送按钮 |
+| `"Slide your finger to cancel the recording"` |  String 	|  Prompt when recording |
+| `"Release your finger, cancel sending"` |  String 	|  Prompt when recording |
+| `"Hold and talk` |  String 	|  Prompt when recording |
+| `"Send"` |  String 	|  Emoticon interface send button |
 
-## 提供的图片资源:
+## Image resource provided:
 
-> 假如自己没有配套的UI，可以使用Demo中的配套资源
+> If you don't have a matching UI, you can use the matching resources in Demo.
 
-| 图片名称      |   说明 |
+| Image Name      |   Description |
 | :------- 	| :------|
-| `"zr_delete""` |  表情模块中的删除按钮 |
-| `"zr_emotion"` |   chat bar上的表情图片 |
-| `"zr_keyboard"` | chat bar上的键盘图片 |
-| `"zr_more"` |  chat bar上的更多图片 |
-| `"zr_record_cancel"` |  录音取消时的图片 |
-| `"zr_recording"` |  正在录音时的图片 |
-| `"zr_voice"` |  chat bar上的语音图片 |
-| `"zr_signal01"` |  声音大小01 |
-| `"zr_signal02"` |  声音大小02 |
-| `"zr_signal03"` |  声音大小03 |
-| `"zr_signal04"` |  声音大小04 |
-| `"zr_signal05"` |  声音大小05 |
-| `"zr_signal06"` |  声音大小06 |
-| `"zr_signal07"` |  声音大小07 |
-| `"zr_signal08"` |  声音大小08 |
+| `"zr_delete""` |  Delete button in the emoticon module |
+| `"zr_emotion"` |   Expression image on chat bar |
+| `"zr_keyboard"` | Keyboard picture on chat bar |
+| `"zr_more"` |  More images on chat bar |
+| `"zr_record_cancel"` |  Picture when the recording is cancelled |
+| `"zr_recording"` |  Picture while recording |
+| `"zr_voice"` |  Voice picture on chat bar |
+| `"zr_signal01"` |  Sound size 01 |
+| `"zr_signal02"` |  Sound size 02 |
+| `"zr_signal03"` |  Sound size 03 |
+| `"zr_signal04"` |  Sound size 04 |
+| `"zr_signal05"` |  Sound size 05 |
+| `"zr_signal06"` |  Sound size 06 |
+| `"zr_signal07"` |  Sound size 07 |
+| `"zr_signal08"` |  Sound size 08 |
 
 
-## 使用
+## Use
 
-> 参照Demo
+> See also Demo
 
 ```swift
 
-	// 自定义More模块
+	// Custom More module
     func contentForMore() -> [ZRMoreModel] {
-        let model1 = ZRMoreModel(imageStr: "chatBar_colorMore_photo", title: "照片")
-        let model2 = ZRMoreModel(imageStr: "chatBar_colorMore_camera", title: "拍摄")
+        let model1 = ZRMoreModel(imageStr: "chatBar_colorMore_photo", title: "Photo")
+        let model2 = ZRMoreModel(imageStr: "chatBar_colorMore_camera", title: "Shooting")
         return [model1, model2]
     }
     
-    // 自定义表情模块
+    // Custom emoticon module
     func contentForEmojis() -> [ZREmojisModel] {
         let models = emojis.map { (arg) -> ZREmojisModel in
             let (title, imgStr) = arg
